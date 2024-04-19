@@ -6,7 +6,7 @@ html {
 
 body {
   @extend html;
-  font-family: $font;
+  font-family: $ft-main;
   text-align: center;
 }
 
@@ -14,8 +14,9 @@ section {
   padding: $padding-small $padding-xsmall $padding-large $padding-xsmall;
 }
 
-#{headings()} {
+@include headings() {
   font-family: $ft-main;
+  text-transform: uppercase;
 }
 
 h2 {
