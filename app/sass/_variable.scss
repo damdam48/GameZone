@@ -2,19 +2,31 @@
 
 $ft-main: "Lato", sans-serif;
 
-//COLORS
+//****************************
+//  MARGIN & PADDING
+//****************************
 
-$black: rgb(39, 39, 39);
+$margin: 1rem;
+$margin-xxsmall: $margin * 0.125;
+$margin-xsmall: $margin * 0.25;
+$margin-small: $margin * 0.5;
+$margin-large: $margin * 2;
+$margin-xlarge: $margin * 4;
+$margin-xxlarge: $margin * 8;
 
-//PADDING
-$padding: 0.8rem;
-$padding-xxs: $padding * 0.125;
-$padding-xs: $padding * 0.25;
-$padding-s: $padding * 0.5;
-$padding-m: $padding;
-$padding-l: $padding * 2;
-$padding-xl: $padding * 3;
-$padding-xxl: $padding * 4;
+$padding: 2rem;
+$padding-xxsmall: $padding * 0.125;
+$padding-xsmall: $padding * 0.25;
+$padding-small: $padding * 0.5;
+$padding-large: $padding * 2;
+$padding-xlarge: $padding * 4;
+$padding-xxlarge: $padding * 8;
 
-//BORDER
-$rounded: 10px;
+//****************************
+//  BREAKPOINTS
+//****************************
+
+$bp-small: 320px;
+$bp-medium: 600px;
+$bp-large: 960px;
+$bp-xlarge: 1080px;
