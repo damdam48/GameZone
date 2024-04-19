@@ -1,16 +1,64 @@
 //Header
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-
-  .header-btn {
+  background-color: #150124;
+  #header-top {
     display: flex;
-    gap: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0.5rem 0 0.5rem 0;
+
+    h1 {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      a {
+        color: #faffee;
+      }
+      li {
+        list-style-type: none;
+      }
+    }
+
+    @include breakpoint($bp-large) {
+      flex-direction: column;
+
+      nav {
+        display: block;
+        padding-top: 1rem;
+      }
+    }
   }
-  .header-txt {
-    @extend .header-btn;
-    align-items: center;
+
+  #header-main {
+    background-image: url("../img/Banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 32rem;
+
+    @include breakpoint($bp-large) {
+      padding-bottom: $padding-xxlarge;
+    }
+  }
+}
+
+#services {
+  color: #faffee;
+  h3 {
+    padding-bottom: $padding-small;
+  }
+  p {
+    padding-bottom: $padding-small;
+  }
+  .p {
+    padding-bottom: $padding-small;
+    p {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
   }
 }

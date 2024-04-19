@@ -8,6 +8,7 @@ body {
   @extend html;
   font-family: $ft-main;
   text-align: center;
+  background-color: #150124;
 }
 
 section {
@@ -52,9 +53,6 @@ a {
     color: black;
   }
 }
-
-ul {
-  li {
-    text-decoration: none;
-  }
+li {
+  list-style-type: none;
 }
