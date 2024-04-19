@@ -48,17 +48,37 @@ header {
 
 #services {
   color: #faffee;
-  h3 {
-    padding-bottom: $padding-small;
-  }
-  p {
-    padding-bottom: $padding-small;
+  .text {
+    padding: $padding-small $padding-large;
   }
   .p {
     padding-bottom: $padding-small;
     p {
       padding-bottom: 0;
       margin-bottom: 0;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    .card-content1 {
+      margin: auto;
+      width: 400px;
+      height: 400px;
+      background-image: url("../img/console (2).webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: $margin-large;
+    }
+
+    .card-content2 {
+      @extend .card-content1;
+      background-image: url("../img/gratuit (2).webp");
+    }
+
+    .card-content3 {
+      @extend .card-content1;
+      background-image: url("../img/Retro_game (2).webp");
     }
   }
 }
