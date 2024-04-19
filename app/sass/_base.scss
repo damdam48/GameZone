@@ -49,5 +49,12 @@ a {
   }
 
   &:visited {
+    color: black;
+  }
+}
+
+ul {
+  li {
+    text-decoration: none;
   }
 }
