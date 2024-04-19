@@ -1,0 +1,16 @@
+/* -------------------
+ RESPONSIVE
+ -------------------- */
+
+//  Create Desktop view
+@mixin breakpoint($bp-max, $bp-min: "") {
+  @if ($bp-min != "") {
+    @media screen and (min-width: #{$bp-min}) and (max-width: #{$bp-max}) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: #{$bp-max}) {
+      @content;
+    }
+  }
+}

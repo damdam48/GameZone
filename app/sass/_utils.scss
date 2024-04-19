@@ -1,0 +1,15 @@
+//****************************
+//  CONTAINER
+//****************************
+.container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 960px;
+
+  @include breakpoint($bp-large) {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 $padding-xxsmall;
+  }
+}
