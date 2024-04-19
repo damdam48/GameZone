@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+$ft-main: "Lato", sans-serif;
+
+//COLORS
+
+$black: rgb(39, 39, 39);
+
+//PADDING
+$padding: 0.8rem;
+$padding-xxs: $padding * 0.125;
+$padding-xs: $padding * 0.25;
+$padding-s: $padding * 0.5;
+$padding-m: $padding;
+$padding-l: $padding * 2;
+$padding-xl: $padding * 3;
+$padding-xxl: $padding * 4;
+
+//BORDER
+$rounded: 10px;
