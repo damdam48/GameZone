@@ -7,10 +7,46 @@ html {
 body {
   @extend html;
   font-family: $font;
-  color: $lightgrey;
   text-align: center;
 }
 
 section {
   padding: $padding-small $padding-xsmall $padding-large $padding-xsmall;
+}
+
+#{headings()} {
+  font-family: $ft-main;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+  padding-top: $padding;
+  padding-bottom: $padding-xsmall;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p,
+a {
+  margin-top: 0;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+  }
 }
