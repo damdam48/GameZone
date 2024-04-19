@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  padding: 0px;
+  font-size: 16px;
+}
+
+body {
+  @extend html;
+  font-family: $font;
+  color: $lightgrey;
+  text-align: center;
+}
+
+section {
+  padding: $padding-small $padding-xsmall $padding-large $padding-xsmall;
+}
